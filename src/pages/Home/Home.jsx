@@ -9,7 +9,6 @@ const Home = () => {
   useEffect(() => {
     (async () => {
       const trendingMovies = await getTrending();
-      //   console.log(trendingMovies);
       setMovies(trendingMovies);
     })();
   }, []);

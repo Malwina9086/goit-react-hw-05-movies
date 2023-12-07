@@ -17,7 +17,7 @@ const MovieDetails = () => {
   useEffect(() => {
     const fetchDetails = async () => {
       const movieData = await getDetails(id);
-      //   console.log(movieData);
+
       setMovie(movieData);
       setIsLoading(false);
     };
